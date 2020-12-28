@@ -1,70 +1,54 @@
-# Getting Started with Create React App
+# MusicSocialWeb using:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# <img src="https://img.shields.io/badge/react%20-%2320232a.svg?&style=for-the-badge&logo=react&logoColor=%2361DAFB"/><img src="https://img.shields.io/badge/material%20ui%20-%230081CB.svg?&style=for-the-badge&logo=material-ui&logoColor=white"/><img src="https://img.shields.io/badge/node.js%20-%2343853D.svg?&style=for-the-badge&logo=node.js&logoColor=white"/><img src="https://img.shields.io/badge/express.js%20-%23404d59.svg?&style=for-the-badge"/><img src="https://img.shields.io/badge/mysql-%2300f.svg?&style=for-the-badge&logo=mysql&logoColor=white"/>
 
-## Available Scripts
+## Installation - Follow STEP #1 and proceed to CLIENT / SERVER SIDE INSTRUCTIONS BELOW (Run CLIENT & SERVER on TWO SEPARATE TERMINALS)
 
-In the project directory, you can run:
+1. `git clone https://github.com/JLopezz3/MXERMusicApp-Frontend`
 
-### `npm start`
+### HOW TO START CLIENT SIDE:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. `cd .\MXERMusicApp-Frontend\`
+3. `git pull origin main`
+4. `npm i`
+5. `npm start`
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## CommandLine / Terminal Instructions for Git below:
 
-### `npm test`
+### Branching
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. `git branch "your-branch-name"`
+2. `git checkout "your-branch-name"`
+3. `git push --set-upstream origin "your-branch-name"`
 
-### `npm run build`
+### Workflow
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. `git checkout "your-branch-name"`
+2. `git add .`
+3. `git commit -m {message}`
+4. `git push`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Pulling from main branch
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. `git checkout "your-branch-name"`
+2. `git pull origin main`
 
-### `npm run eject`
+## Contributors :star:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Thanks to my team members! :crown::crown::
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/trinhamcity1"><img src="https://avatars3.githubusercontent.com/u/70785196?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Tri Nham</b></sub></a><br /></td>
+    <td align="center"><a href="https://github.com/seungej"><img src="https://avatars1.githubusercontent.com/u/60298161?s=460&v=4" width="100px;" alt=""/><br /><sub><b>Seung Jung</b></sub></a><br /></td>
+  </tr>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+</table>
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!-- ALL-CONTRIBUTORS-LIST:END -->
