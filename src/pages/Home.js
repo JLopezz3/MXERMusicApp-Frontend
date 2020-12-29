@@ -1,47 +1,21 @@
-import React, { useState} from 'react';
-import Axios from "axios";
+import React from "react";
 
-function Home() {
+// import { makeStyles } from "@material-ui/core/styles";
 
-    const [songName, setSongName] = useState('')
-    const [rating, setSongRating] = useState([]);
+// const useStyles = makeStyles((theme) => ({
+//   bg: {
+//     backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.9)), url('https://images.unsplash.com/photo-1507638136177-1e4d9d20bd31?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1962&q=80')`,
+//     objectFit: "contain",
+//     backgroundSize: "auto",
+//   },
+// }));
 
-    // useEffect(() => {
-    //     Axios.get("https://mxer-app.herokuapp.com/api/get").then((response) => {
-    //         console.log(response.data);
-    //     })
-    // }, []);
+export default function Home() {
+  // const classes = useStyles();
 
-    const submitRating = () => {
-        Axios.post("https://mxer-app.herokuapp.com/api/insert", {
-            songName: songName,
-            songRating: rating
-        }).then(() => {
-            alert("SUCCESSFUL INERT!");
-        });
-    };
-
-    return (
-        <div>
-            <h1>CRUD TESTING </h1>
-
-            <div className="form">
-                <label>Song Name:</label>
-                <input type="text" name="songName" placeholder="input the songname"
-                onChange={(e) => {
-                    setSongName(e.target.value)
-                }}/>
-                <label>Rating</label>
-                <input type="text" name="songReview" placeholder="input the songreview"
-                onChange={(e) => {
-                    setSongRating(e.target.value)
-                }}/>
-
-                <button>Submit</button>
-            </div>
-            
-        </div>
-    )
+  return (
+    <div>
+      <p>THIS IS THE HOME PAGE</p>
+    </div>
+  );
 }
-
-export default Home
