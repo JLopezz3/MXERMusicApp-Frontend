@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import axios from 'axios';
 import { LinkButtons, SubmitButtons, registerButton, homeButton, forgotButton, inputStyle, HeaderBar } from '../components';
 
+
 const title = {
     pageTitle: 'Forgot Password Screen',
 };
@@ -26,7 +27,7 @@ class ForgotPassword extends Component {
 
     sendEmail = e => {
         e.preventDefault();
-        if(rhis.state.email === ''){
+        if(this.state.email === ''){
             this.setState({
                 showError: false,
                 messageFromServer: '',
