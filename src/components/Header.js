@@ -1,22 +1,49 @@
-import React from 'react';
-import { makeStyles } from '@material-ui/core/styles';
-import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
-import MenuIcon from '@material-ui/icons/Menu';
+import React from "react";
+import "./Header.css";
+import { makeStyles } from "@material-ui/core/styles";
+import AppBar from "@material-ui/core/AppBar";
+import Toolbar from "@material-ui/core/Toolbar";
+import Typography from "@material-ui/core/Typography";
+import Button from "@material-ui/core/Button";
 import Link from "@material-ui/core/Link";
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
   },
-  menuButton: {
-    marginRight: theme.spacing(2),
+  appBar: {
+    backgroundColor: "#202020",
   },
   title: {
     flexGrow: 1,
+    color: "#FA9232",
+    fontFamily: "Bungee Inline",
+  },
+  signUp: {
+    color: "#FA9232",
+    background: "#F3DCC6",
+    fontFamily: "Bungee Inline",
+    "&:hover, &.Mui-focusVisible": {
+      transition: "0.3s",
+      color: "#FFFFFF",
+      backgroundColor: "rgb(176 113 41)",
+    },
+    borderRadius: 10,
+    width: 100,
+    margin: theme.spacing(1),
+  },
+  logIn: {
+    color: "#202020",
+    background: "#FA9232",
+    fontFamily: "Bungee Inline",
+    "&:hover, &.Mui-focusVisible": {
+      transition: "0.3s",
+      color: "#FFFFFF",
+      backgroundColor: "rgb(176 113 41)",
+    },
+    borderRadius: 10,
+    width: 100,
+    margin: theme.spacing(1),
   },
 }));
 
@@ -25,24 +52,16 @@ export default function Header() {
 
   return (
     <div className={classes.root}>
-      <AppBar position="static">
+      <AppBar className={classes.appBar} position="static">
         <Toolbar>
-          <IconButton
-            edge="start"
-            className={classes.menuButton}
-            color="inherit"
-            aria-label="menu"
-          >
-            <MenuIcon />
-          </IconButton>
-          <Typography variant="h6" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
             MXER
           </Typography>
-          <Link href="/signup">
-            <Button>Signup</Button>
+          <Link href="/signup" style={{ textDecoration: "none" }}>
+            <Button className={classes.signUp}>Signup</Button>
           </Link>
-          <Link href="/login">
-            <Button>Login</Button>
+          <Link href="/login" style={{ textDecoration: "none" }}>
+            <Button className={classes.logIn}>Login</Button>
           </Link>
         </Toolbar>
       </AppBar>
