@@ -68,6 +68,7 @@ export default function Login() {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
+  //sends login data to server api
   const login = () => {
     axios
       .post("http://localhost:3001/login", {
