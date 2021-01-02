@@ -16,7 +16,6 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    color: "#FA9232",
     fontFamily: "Bungee Inline",
   },
   signUp: {
@@ -55,7 +54,9 @@ export default function Header() {
       <AppBar className={classes.appBar} position="static">
         <Toolbar>
           <Typography variant="h4" className={classes.title}>
-            MXER
+            <Link href="/" style={{ textDecoration: "none", color: "#FA9232" }}>
+              MXER
+            </Link>
           </Typography>
           <Link href="/signup" style={{ textDecoration: "none" }}>
             <Button className={classes.signUp}>Signup</Button>
