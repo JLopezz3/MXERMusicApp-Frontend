@@ -1,6 +1,6 @@
 import React from "react";
 import "./Home.css";
-import HomeBG from "../assets/Home.png";
+import HomeBG from "../../assets/Home.png";
 import { makeStyles } from "@material-ui/core/styles";
 import { Grid, Typography, Button } from "@material-ui/core";
 import SearchIcon from "@material-ui/icons/Search";
@@ -8,13 +8,12 @@ import OutlinedInput from "@material-ui/core/OutlinedInput";
 import InputAdornment from "@material-ui/core/InputAdornment";
 
 const useStyles = makeStyles((theme) => ({
-  root: {
-  },
+  root: {},
   text: {
     position: "relative",
     justifyContent: "center",
     paddingTop: "20px",
-    textAlignn: "center"
+    textAlignn: "center",
   },
   header: {
     color: "#FA9232",
@@ -34,7 +33,6 @@ const useStyles = makeStyles((theme) => ({
     width: "40%",
     fontFamily: "Bebas Neue",
   },
-
 }));
 
 export default function Home() {
@@ -63,10 +61,7 @@ export default function Home() {
         >
           <div className={classes.text}>
             <Grid item xs={12}>
-              <Typography
-                className={classes.header}
-                variant="h2"
-              >
+              <Typography className={classes.header} variant="h2">
                 BROWSE MUSIC NOW
               </Typography>
             </Grid>

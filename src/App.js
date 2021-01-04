@@ -1,9 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import Header from "./components/Header";
-import Signup from "./pages/Signup";
-import Login from "./pages/Login";
+import Home from "./pages/Home/Home";
+import Header from "./components/Header/Header";
+import Signup from "./pages/Signup/Signup";
+import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           </Route>
           <Route path="/login">
             <Login />
+          </Route>
+          <Route path="/dashboard">
+            <Dashboard />
           </Route>
           <Route path="/">
             <Header />
