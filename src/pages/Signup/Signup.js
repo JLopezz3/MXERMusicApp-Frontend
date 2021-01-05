@@ -12,8 +12,9 @@ import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
-
+import './Signup.css';
 import axios from "axios"
+import { SignalWifi4BarLockSharp } from '@material-ui/icons';
 
 
 function Copyright() {
@@ -37,9 +38,11 @@ const useStyles = makeStyles((theme) => ({
         flexDirection: 'column',
         alignItems: 'center',
     },
-    avatar: {
+    title: {
         margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
+        fontFamily: "Bungee Inline",
+        color: "#FA9232",
+        textShadow: "2px 2px black",
     },
     form: {
         width: '100%', // Fix IE 11 issue.
@@ -47,6 +50,12 @@ const useStyles = makeStyles((theme) => ({
     },
     submit: {
         margin: theme.spacing(3, 0, 2),
+        backgroundColor: "#FA9232",
+        "&:hover, &.Mui-focusVisible": {
+            transition: "0.3s",
+            color: "#FFFFFF",
+            backgroundColor: "rgb(176 113 41)",
+          },
     },
 }));
 
@@ -69,11 +78,11 @@ export default function SignUp() {
         <Container component="main" maxWidth="xs">
         <CssBaseline />
         <div className={classes.paper}>
-            <Avatar className={classes.avatar}>
-                <LockOutlinedIcon />
-            </Avatar>
+        <Typography className={classes.title} variant="h2">
+            MXER
+        </Typography>
         <Typography component="h1" variant="h5">
-            Sign up for MXER
+            Create an Account
         </Typography>
         <form className={classes.form} noValidate>
             <Grid container spacing={2}>
@@ -129,12 +138,6 @@ export default function SignUp() {
                     }}
                 />
                 </Grid>
-                <Grid item xs={12}>
-                <FormControlLabel
-                    control={<Checkbox value="allowExtraEmails" color="primary" />}
-                    label="I want to receive inspiration, marketing promotions and updates via email."
-                />
-                </Grid>
             </Grid>
             <Button
                 type="submit"
@@ -148,7 +151,7 @@ export default function SignUp() {
             </Button>
             <Grid container justify="flex-end">
                 <Grid item>
-                    <Link href="http://localhost:3000/login" variant="body2">
+                    <Link href="http://localhost:3000/login" variant="body2" style={{ textDecoration: "none", color: "black" }}>
                         Already have an account? Sign in
                     </Link>
                 </Grid>
