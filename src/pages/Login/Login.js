@@ -49,9 +49,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     alignItems: "center",
   },
-  avatar: {
+  title: {
     margin: theme.spacing(1),
-    backgroundColor: theme.palette.secondary.main,
+    fontFamily: "Bungee Inline",
+    color: "#FA9232",
+    textShadow: "2px 2px black",
   },
   form: {
     width: "100%", // Fix IE 11 issue.
@@ -59,6 +61,12 @@ const useStyles = makeStyles((theme) => ({
   },
   submit: {
     margin: theme.spacing(3, 0, 2),
+    backgroundColor: "#FA9232",
+        "&:hover, &.Mui-focusVisible": {
+            transition: "0.3s",
+            color: "#FFFFFF",
+            backgroundColor: "rgb(176 113 41)",
+          },
   },
 }));
 
@@ -86,9 +94,9 @@ export default function Login() {
       <Grid item xs={false} sm={4} md={7} className={classes.image} />
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
-          <Avatar className={classes.avatar}>
-            <LockOutlinedIcon />
-          </Avatar>
+        <Typography className={classes.title} variant="h2">
+            MXER
+        </Typography>
           <Typography component="h1" variant="h5">
             Login
           </Typography>
@@ -137,12 +145,12 @@ export default function Login() {
             </Button>
             <Grid container>
               <Grid item xs>
-                <Link href="#" variant="body2">
+                <Link href="#" variant="body2" style={{ textDecoration: "none", color: "black" }}>
                   Forgot password?
                 </Link>
               </Grid>
               <Grid item>
-                <Link href="http://localhost:3000/signup" variant="body2">
+                <Link href="http://localhost:3000/signup" variant="body2" style={{ textDecoration: "none", color: "black" }}>
                   {"Don't have an account? Sign Up"}
                 </Link>
               </Grid>
