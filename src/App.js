@@ -6,6 +6,7 @@ import Signup from "./pages/Signup/Signup";
 import Login from "./pages/Login/Login";
 import ProfileInfo from "./components/ProfileInfo/ProfileInfo";
 import Dashboard from "./pages/Dashboard/Dashboard";
+import HeaderTwo from "./components/HeaderTwo/HeaderTwo";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             <ProfileInfo />
           </Route>
           <Route path="/dashboard">
+            <HeaderTwo />
             <Dashboard />
           </Route>
           <Route path="/">

@@ -6,7 +6,16 @@ import useMediaQuery from "@material-ui/core/useMediaQuery";
 import { red, blue, green } from "@material-ui/core/colors";
 import { AutoRotatingCarousel, Slide } from "material-auto-rotating-carousel";
 
+import { makeStyles } from "@material-ui/core/styles";
+
+const useStyles = makeStyles((theme) => ({
+  button: {
+    background: "green",
+  }
+}));
+
 const AutoRotatingCarouselModal = ({ handleOpen, setHandleOpen, isMobile }) => {
+
   return (
     <div>
       {/* <Button onClick={() => setHandleOpen({ open: true })}>Open carousel</Button> */}
@@ -61,6 +70,7 @@ const AutoRotatingCarouselModal = ({ handleOpen, setHandleOpen, isMobile }) => {
 };
 
 export default function GetStartedCarousel() {
+  const classes = useStyles();
   const [handleOpen, setHandleOpen] = useState({ open: false });
   const handleClick = () => {
     setHandleOpen({ open: true });
@@ -68,7 +78,7 @@ export default function GetStartedCarousel() {
   const matches = useMediaQuery("(max-width:600px)");
   return (
     <div>
-      <Button onClick={handleClick}>Get Started</Button>
+      <Button className={classes.button} onClick={handleClick}>Get Started</Button>
       <AutoRotatingCarouselModal
         isMobile={matches}
         handleOpen={handleOpen}
