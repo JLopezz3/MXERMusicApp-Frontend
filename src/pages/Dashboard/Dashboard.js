@@ -15,6 +15,11 @@ import Typography from "@material-ui/core/Typography";
 import SearchBar from "material-ui-search-bar";
 
 const useStyles = makeStyles((theme) => ({
+  title: {
+    marginTop: theme.spacing(4),
+    fontFamily: "Bebas Neue",
+    letterSpacing: "0.2em"
+  },
   searchBar: {
     marginTop: theme.spacing(4),
   },
@@ -45,7 +50,7 @@ export default function Dashboard() {
         alignItems="center"
       >
         <Grid>
-          <Typography variant="h2">
+          <Typography variant="h2" className={classes.title}>
             SEARCH MUSIC
           </Typography>
         </Grid>
