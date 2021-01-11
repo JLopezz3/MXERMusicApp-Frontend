@@ -10,8 +10,18 @@ import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
   button: {
-    background: "green",
-  }
+    color: "#202020",
+    background: "#FA9232",
+    fontFamily: "Bungee Inline",
+    "&:hover, &.Mui-focusVisible": {
+      transition: "0.3s",
+      color: "#FFFFFF",
+      backgroundColor: "rgb(176 113 41)",
+    },
+    borderRadius: 10,
+    width: "100%",
+    margin: theme.spacing(1)
+  },
 }));
 
 const AutoRotatingCarouselModal = ({ handleOpen, setHandleOpen, isMobile }) => {
@@ -32,19 +42,19 @@ const AutoRotatingCarouselModal = ({ handleOpen, setHandleOpen, isMobile }) => {
           media={
             <img
               alt=""
-              src="http://www.icons101.com/icon_png/size_256/id_79394/youtube.png"
+              src="http://www.icons101.com/icons/64/musical_collectiontarkeenART_by_tarkeenART/128/Music%20[2].png"
             />
           }
           mediaBackgroundStyle={{ backgroundColor: red[400] }}
           style={{ backgroundColor: red[600] }}
-          title="This is a very cool feature"
-          subtitle="Just using this will blow your mind."
+          title="Share and discover music with other artists"
+          subtitle="Search a wide range of music"
         />
         <Slide
           media={
             <img
               alt=""
-              src="http://www.icons101.com/icon_png/size_256/id_80975/GoogleInbox.png"
+              src="http://www.icons101.com/icons/64/musical_collectiontarkeenART_by_tarkeenART/128/OST%20[2].png"
             />
           }
           mediaBackgroundStyle={{ backgroundColor: blue[400] }}
@@ -56,7 +66,7 @@ const AutoRotatingCarouselModal = ({ handleOpen, setHandleOpen, isMobile }) => {
           media={
             <img
               alt=""
-              src="http://www.icons101.com/icon_png/size_256/id_76704/Google_Settings.png"
+              src="http://www.icons101.com/icons/64/musical_collectiontarkeenART_by_tarkeenART/128/Singer.png"
             />
           }
           mediaBackgroundStyle={{ backgroundColor: green[400] }}
