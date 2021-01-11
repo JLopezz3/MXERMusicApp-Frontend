@@ -9,8 +9,6 @@ const styles = {
     //
     height: "100vh",
     color: "red",
-    justifyContent: "center",
-    alignItems: "center",
     textAlign: "center",
   },
   slide1: {
